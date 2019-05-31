@@ -3,21 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>HOTCOW</title>
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
+
   <body>
-    <!-- Main navigation menu, top of page -->
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="tng.html">The Nitty Gritty</a></li>
-        <li><a href="glossary.html">Glossary</a></li>
-        <li><a href="links.html">Downloads & Links</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-
-    <h1>Home Page</h1>
-
+    <!-- navbar section at the top -->
+    <ul>
+      <li><a class="navItem" href="#">About</a></li>
+      <li><a class="navItem" href="#">Getting Started</a></li>
+      <li><a class="navItem" href="#">Glossary</a></li>
+      <li class="dropdown">
+        <a class="navItem" href="#" class="dropbtn">Useful Links</a>
+        <div class="dropdown-content">
+          <a href="#">Creating folders</a>
+          <a href="#">HTML Sheet</a>
+          <a href="#">CSS Sheet</a>
+        </div>
+      </li>
+      <li><a class="navItem" href="#">Contact</a></li>
+    </ul>
   </body>
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>How to code a website</h1>
+      <h2>Broken down into easy bitsize steps!</h2>
+      <a href="#" class="btn"> Learn now</a>
+    </div>
+  </section>
+
 </html>
