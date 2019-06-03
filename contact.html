@@ -3,39 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/contact.css">
+    <!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <!-- Main navigation menu, top of page -->
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="tng.html">The Nitty Gritty</a></li>
-          <li><a href="glossary.html">Glossary</a></li>
-          <li><a href="links.html">Downloads & Links</a></li>
-          <li><a>Contact Us</a></li>
+          <li><a class="navItem" href="index.html">Home</a></li>
+          <li><a class="navItem" href="about.html">About</a></li>
+          <li><a class="navItem" href="getting_started.html">Getting Started</a></li>
+          <li><a class="navItem" href="glossary.html">Glossary</a></li>
+          <li><a class="navItem" href="links.html">Useful Links</a></li>
+          <li><a class="navItem" href="#">Contact Us</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- include banner img here, spanning across top of page, below main nav bar -->
+    <section class="heroContact-image">
+      <div class="hero-text">
+        <h1>Drop us a line</h1>
+        <p><em>Questions?</em> Drop us a line, we'll do our best to help. Remember, Google is an excellent resource.</p>
+        <p><em>Eager to contribute?</em> Send us your suggestions. We'll be in touch to add your content in due course.</p>
+        <br>
+      </div>
+    </section>
+    <br>
 
     <!-- Visitor's contact details and message -->
-    <form>
-      Name:<br>
-      <input type="text" name="name">
-      <br>
-      E-mail:<br>
-      <input type="email" name="email">
-      <br>
-      Company:<br>
-      <input type="text" name="company name">
-      <br>
-      Message:<br>
-      <textarea name="message" rows="8" cols="80"></textarea>
-      <br>
-      <input type="submit" name="submit" value="Submit message">
+    <form id="contact-form">
+      <div class="input-fields">
+        <!-- Name:<br> -->
+        <input type="text" name="name" placeholder="Full name">
+        <br>
+        <!-- E-mail:<br> -->
+        <input type="email" name="email" placeholder="Email">
+        <br>
+        <!-- Company:<br> -->
+        <input type="text" name="company name" placeholder="Company name">
+        <br>
+      </div>
+      <div class="message">
+        <!-- Message:<br> -->
+        <textarea name="message" placeholder="Type message here" rows="8" cols="80"></textarea>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+      </div>
     </form>
 
   </body>
