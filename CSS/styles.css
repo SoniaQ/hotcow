@@ -169,13 +169,16 @@ li.dropdown {
 
 /* START FORMATTING PAGE - ABOUT US */
 
-.introduction {
-  font-size: 1em;
+.Intro.Team {
+  background-color: #b9b7ce;
+  border-top: 1px solid #eaeaea;
   text-align: center;
-  line-height: 1.5;
-  background-color: #0C0C64;
-  color: white;
-}
+  color: #453c9e;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 /* START Team Container */
 
