@@ -169,6 +169,14 @@ li.dropdown {
 
 /* START FORMATTING PAGE - ABOUT US */
 
+.introduction {
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #0C0C64;
+  color: white;
+}
+
 /* START Team Container */
 
 .team-bx {
