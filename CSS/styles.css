@@ -167,175 +167,37 @@ li.dropdown {
   color: #453c9e;
 }
 
-.column side h2 {
-  font-size: 2em;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  /* margin-left: 2em; */
-  color: white;
+/* START FORMATTING PAGE - ABOUT US */
+
+/* START Team Container */
+
+.team-bx {
+
+  li
+    background-color: #b9b7ce
+    padding: 50px
 }
 
-.column side p{
-  color: white;
-  font-size: 1.5em;
-}
-.column side {
-  margin: 0 auto;
-
-  @media (min-width: 1200px) {
-    width: 1170px;
+  .img-circle {
+    width: 100px
+    border-radius: 50%
+    margin-bottom: 10px
   }
 
-  .Column side {
-    background-color: #b9b7ce;
-    color: #453c9e;
+  .fullname {
+    color: #453c9e
+    font-weight: bold
   }
 
-  @media (min-width: 992px) {
-      width: 970px;
+  .designation {
+    font-size: 12px
   }
-}
 
-.member {
-	margin-bottom: 20px;
-	display: inline-block;
-	vertical-align: top;
-	position: relative;
-	padding-bottom: 20px;
-	cursor: pointer;
-}
-
-.member::after {
-	content: '';
-    padding: 0 50%;
-    background: #CCCCCC;
-    height: 4px;
-    display: none;
-    position: relative;
-    margin-top: 10px;
-    margin-bottom: -14px;
-}
-
-.member .member-img {
-	width: 100%;
-	margin-bottom: 30px;
-	overflow: hidden;
-}
-
-.member .member-img img {
-	width: 100%;
-	height: auto;
-}
-
-
-.member .member-data {
-	width: 78%;
-	display: inline-block;
-}
-
-.member .member-data .nome {
-	font-size: 20px;
-}
-
-.member .member-data .member-content {
-	display: none;
-}
-
-.member span {
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-}
-
-.member span.lnk-active {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-
-
-.member .lnk-member,
-.member .lnk-active {
-	display: inline-block;
-	width: 20%;
-	text-align: center;
-	vertical-align: top;
-	cursor: pointer;
-	margin-top: 5px;
-	height: 22px;
-}
-
-.members .member-details {
-	display: none;
-}
-
-.members .member-details .interno {
-	background: #CCCCCC;
-	padding: 50px 50px;
-	margin-bottom: 30px;
-	color: #ffffff;
-}
-
-.members .member-details .nome{
-	font-style: italic;
-	font-size: 40px;
-}
-
-.members .member-details .area{
-	font-style: italic;
-	font-size: 20px;
-}
-
-.members .member-details .conteudo {
-	color: #525252;
-	line-height: 1;
-}
-
-.member.active .nome,
-.member:hover .nome {
-	color:#CCCCCC;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-.member.active::after,
-.member:hover:after {
-	display:block;
-}
-/* FORMATTING PAGE - ABOUT US */
-
-/* Create three unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-}
-
-/* Left column */
-.column.side {
-  width: 19%;
-}
-
-/* Middle column */
-.column.middle {
-  width: 78%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
+  .about {
+    color: #453c9e
+    margin-top: 10px
   }
-}
+
+/* END Team Container */
 
 /* END FORMATTING PAGE - ABOUT US */
