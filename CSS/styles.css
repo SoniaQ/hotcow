@@ -23,7 +23,7 @@ header a#logo {
 header a#logo:hover {
   font-size: 0;
   line-height: 0;
-  transition: 0.9s;
+  transition: 0.9s ease;
 }
 
 header a#logo:hover:before {
