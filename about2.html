@@ -1,98 +1,110 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
 
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 <link href="css/styles.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-
-  <!-- navbar section at the top -->
-  <ul>
-    <li><a class="navItem" href="#">About</a></li>
-    <li><a class="navItem" href="#">Getting Started</a></li>
-    <li><a class="navItem" href="#">Glossary</a></li>
-    <li class="dropdown">
-      <a class="navItem" href="#" class="dropbtn">Useful Links</a>
-      <div class="dropdown-content">
-        <a href="#">Creating folders</a>
-        <a href="#">HTML Sheet</a>
-        <a href="#">CSS Sheet</a>
-      </div>
-    </li>
-    <li><a class="navItem" href="contact.html">Contact</a></li>
-  </ul>
-  <!-- END navbar section at the top -->
-
-  <section class="Intro Team">
-    <p><h1>Here is the team</h1></p>
-
+  <section class="sticky_header">
+  <header>
+      <!-- logo starts here-->
+      <h1><a href="#" id="logo" data-hover="How To Create your Own Website">HOTCoW</a></h1>
+  </header>
+          <!-- Top navbar starts here-->
+          <nav style="background-color:rgb(255,250,250)"> <!-- rgb(255,250,250) is snow -->
+            <ul>
+              <li><a class="navItem" href="index.html">Home</a></li>
+              <li><a class="navItem" href="getting_started.html">Getting Started</a></li>
+              <li><a class="navItem" href="glossary.html">Glossary</a></li>
+              <li><a class="navItem" href="contact.html">Contact</a></li>
+              <li class="dropdown">
+                <a class="navItem" href="#" class="dropbtn">Useful Links</a>
+                <div class="dropdown-content">
+                  <a href="#">Creating folders</a>
+                  <a href="#">HTML Sheet</a>
+                  <a href="#">CSS Sheet</a>
+                </div>
+              </li>
+              <li><a class="navItem" href="contact.html">Contact</a></li>
+            </ul>
   </section>
+  <!-- END navbar section at the top -->
+
+  <section>
+  <div id="main_content">
+
+      <section class="Intro Team">
+        <p><h1>Here is the team</h1></p>
+
+      </section>
 
   <!-- END navbar section at the top -->
 
-  <div class="clearfix_AU3">
+      <div class="clearfix_AU3">
 
-    <div class="box_AU3" style="background-color:#bbb">
-        <div class="flip-box_AU3">
-          <div class="flip-box-inner_AU3">
+        <div class="box_AU3" style="background-color:#bbb">
+            <div class="flip-box_AU3">
+              <div class="flip-box-inner_AU3">
 
-            <div class="flip-box-front_AU3">
-            <img src="./images/Back_view_1.jpg" alt="Sonia" style="width:45%">
+                <div class="flip-box-front_AU3">
+                <img src="./images/Back_view_1.jpg" alt="Sonia" style="width:45%">
+                </div>
+
+                <div class="flip-box-back_AU3">
+                  <h2>Sonia</h2>
+                  <p>[QUOTE]</p>
+                  <a href="https://github.com/SoniaQ" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
+                </div>
+
+              </div>
             </div>
-
-            <div class="flip-box-back_AU3">
-              <h2>Sonia</h2>
-              <p>[QUOTE]</p>
-              <a href="https://github.com/SoniaQ" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
-            </div>
-
-          </div>
         </div>
-    </div>
 
-    <div class="box_AU3" style="background-color:#ccc">
-        <div class="flip-box_AU3">
-          <div class="flip-box-inner_AU3">
+        <div class="box_AU3" style="background-color:#ccc">
+            <div class="flip-box_AU3">
+              <div class="flip-box-inner_AU3">
 
-            <div class="flip-box-front_AU3">
-            <img src="./images/Back_view_2.jpg" alt="Sarah" style="width:46%">
+                <div class="flip-box-front_AU3">
+                <img src="./images/Back_view_2.jpg" alt="Sarah" style="width:46%">
+                </div>
+
+                <div class="flip-box-back_AU3">
+                  <h2>Sarah</h2>
+                  <p>[QUOTE] </p>
+                  <a href="https://github.com/SarahAnneFinch" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
+                </div>
+
+              </div>
             </div>
-
-            <div class="flip-box-back_AU3">
-              <h2>Sarah</h2>
-              <p>[QUOTE] </p>
-              <a href="https://github.com/SarahAnneFinch" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
-            </div>
-
-          </div>
         </div>
-    </div>
 
 
-    <div class="box_AU3" style="background-color:#ddd">
-        <div class="flip-box_AU3">
-          <div class="flip-box-inner_AU3">
+        <div class="box_AU3" style="background-color:#ddd">
+            <div class="flip-box_AU3">
+              <div class="flip-box-inner_AU3">
 
-            <div class="flip-box-front_AU3">
-            <img src="./images/Back_view_5.jpg" alt="Stephanie" style="width:43%">
+                <div class="flip-box-front_AU3">
+                <img src="./images/Back_view_5.jpg" alt="Stephanie" style="width:43%">
+                </div>
+
+                <div class="flip-box-back_AU3">
+                    <h2>Stephanie</h2>
+                    <p>My favourite coding website is www.w3schools.com!</p>
+                    <a href="https://github.com/sklivinginlondon" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
+                </div>
+
+              </div>
             </div>
-
-            <div class="flip-box-back_AU3">
-                <h2>Stephanie</h2>
-                <p>My favourite coding website is www.w3schools.com!</p>
-                <a href="https://github.com/sklivinginlondon" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
-            </div>
-
-          </div>
         </div>
-    </div>
 
   </div>
 
@@ -132,6 +144,32 @@
     </form>
 
   </section>
+
+</section>
+
+  <footer id="myFooter">
+    <!-- Insert social media icons here -->
+    <div id="social">
+        <a class="social_links" href="https://www.instagram.com/hotcow_london/"><img src="images/ig_icon.png" class="resize">Instagram</a>
+        <a class="social_links" href="https://twitter.com/HOTCoW4"><img src="images/twitter_icon.png" class="resize">Twitter</a>
+        <a class="social_links" href="https://www.facebook.com/HOTCoW-421045838742372/?modal=admin_todo_tour"><img src="images/fb_icon.png" class="resize">Facebook</a>
+      </div>
+
+      <div id="links_bottom">
+        <span class="info">
+          <a class="footerLinks" href="contact.html">Contact Us &ensp;|</a>
+          <a class="footerLinks" href="#">Terms of Use &ensp;|</a>
+          <a class="footerLinks" href="#">Privacy Policy</a>
+        </span>
+        <div id="copy">
+          <span class="about_page">
+            <a class="footerLinks" href="about.html">&copy; 2019 Team HOTCoW</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+      <script src="js/myscript.js"></script>
 
 </body>
 </html>
