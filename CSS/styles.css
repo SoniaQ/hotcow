@@ -10,6 +10,12 @@ ul li {
   padding: 0;
   overflow: hidden;
   /* background-color: #333; */
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
   justify-content: center;
 }
 
@@ -213,6 +219,27 @@ li.dropdown {
   list-style: none;
   display: flex;
 } */
+
+.iconcol {
+  flex: 33%;
+  max-width: 25%;
+  box-sizing: border-box;
+  padding: 35px;
+}
+
+@media screen and (max-width:960px) {
+.iconcol {
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.iconcol {
+  flex: 100%;
+  max-width: 100%;
+}
+}
 
 #icons tbody td {
   margin: 0 20px;
