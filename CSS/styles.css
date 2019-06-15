@@ -4,6 +4,55 @@ body {
   font-size: 18px
 }
 
+/* start of header and logo animation */
+header {
+  background-color: rgb(69, 60, 158, 0.9); /* #453c9e */
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  border-bottom: black;
+  border-bottom-style: double;
+}
+
+header a#logo {
+  color: white; /* text color */
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 2.2px;
+  text-decoration: none;
+  position: relative;
+}
+
+header a#logo:hover {
+  font-size: 0;
+  line-height: 0;
+  transition: 0.9s ease;
+}
+
+header a#logo:hover:before {
+  content: attr(data-hover);
+  /* color: #42e8e0; */
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: -10px;
+  /* transition: 10s; */
+}
+
+/* Sticky header and navbar */
+.sticky_header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky_header + .content {
+  padding-top: 102px;
+}
+/* End of header and logo animation */
+
+/* Start of top navBar */
 ul li {
   list-style-type: none;
   margin: 0;
@@ -71,10 +120,14 @@ li.dropdown {
   color: #42e8e0;
 }
 
+/* end of navbar */
+
+/* Beginning of mobile nav */
+
 .toggle {
   width: 100%
   padding: 10px 20px;
-  background: white;
+  background:rgb(255,250,250);
   text-align: right;
   box-sizing: border-box;
   color: #453c9e;
@@ -111,6 +164,9 @@ li.dropdown {
   }
 }
 
+/* end of mobile nag */
+
+/* Beginning of hero */
 .hero {
   width: 100vw;
   height: 80vh;
@@ -183,6 +239,9 @@ li.dropdown {
   background-color: #42e8e0;
 }
 
+/* end of hero */
+
+/* beginning of body */
 .introduction {
   font-size: 1em;
   text-align: center;
@@ -311,4 +370,63 @@ li.dropdown {
   flex: 100%;
   max-width: 100%;
 }
+}
+/* end of body */
+
+/* Start of footer */
+#myFooter {
+   /* position: fixed;
+   z-index: 2; */
+   bottom: 0'
+   left: 0;
+   width: 100%;
+   border-top: black;
+   border-top-style: double;
+   background-color: rgb(69, 60, 158, 0.7); /* #453c9e */
+   display: block;
+   color: white;
+   text-align: center;
+   margin-top: 0;
+   padding: 15px;
+}
+
+#social {
+  margin: 0 0 5px 0;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+#links_bottom {
+  margin: 5px 0 0 0;
+  padding-top: 10px;
+}
+.social_links {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+
+.social_links .resize {
+  width: 25px;
+  height: auto;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.footer_style {
+  list-style-type: none;
+}
+
+.footerLinks {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#copy{
+  padding-top: 5px;
 }
