@@ -34,7 +34,7 @@ header a#logo:hover:before {
   content: attr(data-hover);
   /* color: #42e8e0; */
   font-size: 40px;
-  line-height: 44px;
+  line-height: 45px;
   margin-bottom: -10px;
   /* transition: 10s; */
 }
