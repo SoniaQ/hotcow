@@ -1,42 +1,98 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Contact Us</title>
-  </head>
-  <body>
-    <!-- Main navigation menu, top of page -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="tng.html">The Nitty Gritty</a></li>
-          <li><a href="glossary.html">Glossary</a></li>
-          <li><a href="links.html">Downloads & Links</a></li>
-          <li><a>Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
+<html lang="en">
 
-    <!-- include banner img here, spanning across top of page, below main nav bar -->
+<head>
+  <meta charset="utf-8">
+  <title>Contact Us</title>
+  <!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
 
-    <!-- Visitor's contact details and message -->
-    <form>
-      Name:<br>
-      <input type="text" name="name">
-      <br>
-      E-mail:<br>
-      <input type="email" name="email">
-      <br>
-      Company:<br>
-      <input type="text" name="company name">
-      <br>
-      Message:<br>
-      <textarea name="message" rows="8" cols="80"></textarea>
-      <br>
-      <input type="submit" name="submit" value="Submit message">
-    </form>
+<body>
+  <section class="sticky_header">
+  <header>
+      <!-- logo starts here-->
+      <h1><a href="index.html" id="logo" data-hover="How To Create your Own Website">HOTCoW</a></h1>
+        </header>
+          <!-- Top navbar starts here-->
+          <nav style="background-color:rgb(255,250,250)"> <!-- rgb(255,250,250) is snow -->
+            <ul>
+              <li><a class="navItem" href="index.html">Home</a></li>
+              <li><a class="navItem" href="about.html">About</a></li>
+              <li><a class="navItem" href="getting_started.html">Getting Started</a></li>
+              <li><a class="navItem" href="glossary.html">Glossary</a></li>
+              <li class="dropdown">
+                <a class="navItem" href="links.html" class="dropbtn">Useful Links</a>
+                <div class="dropdown-content">
+                  <a href="#">Creating folders</a>
+                  <a href="#">HTML Sheet</a>
+                  <a href="#">CSS Sheet</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+    </section>
 
+    <section>
+      <div id="main_content">
+
+        <div class="click_me" style="text-align:center">
+          <!-- <h3>HOTCoW would love to hear from you!</h3> -->
+          <button type="button" name="button" class="js_btn" onclick="typeWriter()"><em class="text_color">Questions? Eager to contribute?</em></button>
+          <p id="autotype"></p>
+        </div>
+
+        <!-- Visitor's contact details and message -->
+        <div class="bg-img">
+          <form id="form" action="action_page.php">
+
+            <label class=form_label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Full name" name="name" required>
+            <br>
+
+            <label class=form_label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required>
+            <br>
+
+            <label class=form_label for="company"><b>Company</b></label>
+            <input type="text" placeholder="Company name" name="company">
+            <br>
+
+            <label class=form_label for="message"><b>Message</b></label>
+            <textarea id="messageContainer" name="message" placeholder="Type questions or comments here" rows="4" cols="58"></textarea>
+            <br>
+            <input type="submit" name="submit" value="Send">
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer id="myFooter">
+      <!-- Insert social media icons here -->
+      <div id="social">
+        <a class="social_links" href="https://www.instagram.com/hotcow_london/"><img src="images/ig_icon.png" class="resize">Instagram</a>
+        <a class="social_links" href="https://twitter.com/HOTCoW4"><img src="images/twitter_icon.png" class="resize">Twitter</a>
+        <a class="social_links" href="https://www.facebook.com/HOTCoW-421045838742372/?modal=admin_todo_tour"><img src="images/fb_icon.png" class="resize">Facebook</a>
+      </div>
+
+      <!-- Insert remaining footer links and copyright here -->
+      <div id="links_bottom">
+        <span class="info">
+          <a class="footerLinks" href="contact.html">Contact Us &ensp;|</a>
+          <a class="footerLinks" href="#">Terms of Use &ensp;|</a>
+          <a class="footerLinks" href="#">Privacy Policy</a>
+        </span>
+        <div id="copy">
+          <span class="about_page">
+            <a class="footerLinks" href="about.html">&copy; 2019 Team HOTCoW</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+      <script src="js/myscript.js"></script>
   </body>
 </html>
