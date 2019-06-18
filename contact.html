@@ -40,28 +40,28 @@
 
         <div class="click_me" style="text-align:center">
           <!-- <h3>HOTCoW would love to hear from you!</h3> -->
-          <button type="button" name="button" class="btn1" onclick="typeWriter()"><em class="text_color">Questions? Eager to contribute?</em></button>
+          <button type="button" name="button" class="js_btn" onclick="typeWriter()"><em class="text_color">Questions? Eager to contribute?</em></button>
           <p id="autotype"></p>
         </div>
 
         <!-- Visitor's contact details and message -->
         <div class="bg-img">
-          <form id="form">
+          <form id="form" action="action_page.php">
 
-            <label for="name"><b>Name</b></label>
+            <label class=form_label for="name"><b>Name</b></label>
             <input type="text" placeholder="Full name" name="name" required>
             <br>
 
-            <label for="email"><b>Email</b></label>
+            <label class=form_label for="email"><b>Email</b></label>
             <input type="email" placeholder="Enter Email" name="email" required>
             <br>
 
-            <label for="company"><b>Company</b></label>
+            <label class=form_label for="company"><b>Company</b></label>
             <input type="text" placeholder="Company name" name="company">
             <br>
 
-            <label for="message"><b>Message</b></label>
-            <textarea id="messageContainer" name="message" placeholder="Type questions or comments here" rows="10" cols="58"></textarea>
+            <label class=form_label for="message"><b>Message</b></label>
+            <textarea id="messageContainer" name="message" placeholder="Type questions or comments here" rows="4" cols="58"></textarea>
             <br>
             <input type="submit" name="submit" value="Send">
 
@@ -78,6 +78,7 @@
         <a class="social_links" href="https://www.facebook.com/HOTCoW-421045838742372/?modal=admin_todo_tour"><img src="images/fb_icon.png" class="resize">Facebook</a>
       </div>
 
+      <!-- Insert remaining footer links and copyright here -->
       <div id="links_bottom">
         <span class="info">
           <a class="footerLinks" href="contact.html">Contact Us &ensp;|</a>
